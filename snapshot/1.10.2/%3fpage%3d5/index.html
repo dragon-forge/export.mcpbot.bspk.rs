@@ -1,0 +1,891 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="http://mcpbot.bspk.rs/static/css/bootstrap.min.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="http://mcpbot.bspk.rs/static/css/mcpbot.css" media="screen">
+<meta charset="UTF-8">
+
+
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<title>MCPBot - Daily Snapshots</title>
+</head>
+<body>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="navbar-header">
+<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand " href="http://mcpbot.bspk.rs/">MCPBot</a>
+<a class="navbar-header" href="http://mcpbot.bspk.rs/"><img class="navbar-header" src="http://mcpbot.bspk.rs/static/img/mcp-logo-101x50.png" height="50" width="auto" /></a>
+</div>
+<div class="navbar-collapse collapse" id="navbar-main">
+<ul class="nav navbar-nav">
+<li class=""><a href="/"><i class="glyphicon glyphicon-export"></i> Data Exports</a></li>
+<li class="active"><a href="/snapshot/"><i class="glyphicon glyphicon-calendar"></i> Daily Snapshots</a></li>
+<li class=""><a href="/stable/"><i class="glyphicon glyphicon-check"></i> Stable Releases</a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li><a href="https://bitbucket.org/ProfMobius/mcpbot" target="_blank"><i class="fa fa-bitbucket"></i> Source</a></li>
+<li><a href="https://github.com/ModCoderPack/MCPBot-Issues" target="_blank"><i class="fa fa-exclamation-triangle"></i> Issues</a></li>
+<li><a href="http://www.modcoderpack.com/website/" target="_blank"><i class="fa fa-newspaper-o"></i> MCP News</a></li>
+<li><a href="http://mcpbot.bspk.rs/help"><i class="fa fa-question-circle"></i> Help</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<h1><i class="glyphicon glyphicon-calendar"></i> Daily Snapshots</h1>
+<p class="">These releases are generated daily using the latest unreviewed changes. Occasional recompile
+errors may happen due to conflicts with FML/Forge patches and/or undocumented features in MCPBot. Please
+report issues to a member of the MCP Team if you are unable to resolve them using MCPBot.</p>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<ul class="pagination">
+<li><a href="?page=1"><i class="fa fa-angle-double-left"></i></a></li>
+<li><a href="?page=4"><i class="fa fa-angle-left"></i></a></li>
+<li><a href="?page=3">3</a></li>
+<li><a href="?page=4">4</a></li>
+<li class="active"><a href="?page=5">5</a></li>
+<li><a href="?page=6">6</a></li>
+<li><a href="?page=7">7</a></li>
+<li><a href="?page=6"><i class="fa fa-angle-right"></i></a></li>
+<li><a href="?page=12"><i class="fa fa-angle-double-right"></i></a></li>
+</ul>
+<table class="table table-striped table-hover">
+<thead>
+<tr>
+<th class="name">Name</th>
+<th class="version">
+<div class="btn-group">
+<a href="#" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+MC Version&nbsp;&nbsp;
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu">
+<li><a href="/snapshot/">All</a></li>
+<li><a href="/snapshot/1.14.2/">1.14.2</a></li>
+<li><a href="/snapshot/1.14.3/">1.14.3</a></li>
+<li><a href="/snapshot/1.14/">1.14</a></li>
+<li><a href="/snapshot/1.14.1/">1.14.1</a></li>
+<li><a href="/snapshot/1.12/">1.12</a></li>
+<li><a href="/snapshot/1.13/">1.13</a></li>
+<li><a href="/snapshot/1.11/">1.11</a></li>
+<li><a href="/snapshot/1.8/">1.8</a></li>
+<li><a href="/snapshot/1.7.10/">1.7.10</a></li>
+<li><a href="/snapshot/1.10.2/">1.10.2</a></li>
+<li><a href="/snapshot/1.9/">1.9</a></li>
+<li><a href="/snapshot/1.13.1/">1.13.1</a></li>
+<li><a href="/snapshot/1.13.2/">1.13.2</a></li>
+<li><a href="/snapshot/1.8.8/">1.8.8</a></li>
+<li><a href="/snapshot/1.8.9/">1.8.9</a></li>
+<li><a href="/snapshot/1.9.4/">1.9.4</a></li>
+</ul>
+</div>
+</th>
+<th class="dl"></th>
+<th class="date">Generated</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">mcp_snapshot-20160930-1.10.2.zip</td>
+<td class="version">1.10.2</td>
+<td class="dl">
+<div class="btn-group">
+<a href="#" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+snapshot_20160930&nbsp;&nbsp;(327.6 KB)&nbsp;&nbsp;
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu dropdown-menu-right">
+<li><a href="#" data-toggle="modal" data-target="#snapshot_20160930"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;Use in ForgeGradle</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160930-1.10.2/mcp_snapshot-20160930-1.10.2.zip"><span class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;Download Zip</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160930-1.10.2/mcp_snapshot-20160930-1.10.2.zip.md5"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;MD5 File Hash</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160930-1.10.2/mcp_snapshot-20160930-1.10.2.zip.sha1"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;SHA-1 File Hash</a></li>
+</ul>
+</div>
+<div class="btn-group">
+<a href="#" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+snapshot_nodoc_20160930&nbsp;&nbsp;(217.7 KB)&nbsp;&nbsp;
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu dropdown-menu-right">
+<li><a href="#" data-toggle="modal" data-target="#snapshot_nodoc_20160930"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;Use in ForgeGradle</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160930-1.10.2/mcp_snapshot_nodoc-20160930-1.10.2.zip"><span class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;Download Zip</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160930-1.10.2/mcp_snapshot_nodoc-20160930-1.10.2.zip.md5"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;MD5 File Hash</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160930-1.10.2/mcp_snapshot_nodoc-20160930-1.10.2.zip.sha1"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;SHA-1 File Hash</a></li>
+</ul>
+</div>
+</td>
+<td class="date">2016-09-30 03:00:01 EDT</td>
+<div class="modal fade" id="snapshot_20160930" tabindex="-1" role="dialog" aria-labelledby="snapshot_20160930Label" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<h4 class="modal-title" id="snapshot_20160930Label">Use this mapping set in ForgeGradle</h4>
+</div>
+<div class="modal-body">
+<p>Add or edit this info in your build.gradle file:</p>
+<code>minecraft {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;mappings = 'snapshot_20160930'<br />
+}</code>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="snapshot_nodoc_20160930" tabindex="-1" role="dialog" aria-labelledby="snapshot_nodoc_20160930Label" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<h4 class="modal-title" id="snapshot_nodoc_20160930Label">Use this mapping set in ForgeGradle</h4>
+</div>
+<div class="modal-body">
+<p>Add or edit this info in your build.gradle file:</p>
+<code>minecraft {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;mappings = 'snapshot_nodoc_20160930'<br />
+}</code>
+</div>
+</div>
+</div>
+</div>
+</tr>
+<tr>
+<td class="name">mcp_snapshot-20160929-1.10.2.zip</td>
+<td class="version">1.10.2</td>
+<td class="dl">
+<div class="btn-group">
+<a href="#" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+snapshot_20160929&nbsp;&nbsp;(327.6 KB)&nbsp;&nbsp;
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu dropdown-menu-right">
+<li><a href="#" data-toggle="modal" data-target="#snapshot_20160929"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;Use in ForgeGradle</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160929-1.10.2/mcp_snapshot-20160929-1.10.2.zip"><span class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;Download Zip</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160929-1.10.2/mcp_snapshot-20160929-1.10.2.zip.md5"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;MD5 File Hash</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160929-1.10.2/mcp_snapshot-20160929-1.10.2.zip.sha1"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;SHA-1 File Hash</a></li>
+</ul>
+</div>
+<div class="btn-group">
+<a href="#" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+snapshot_nodoc_20160929&nbsp;&nbsp;(217.7 KB)&nbsp;&nbsp;
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu dropdown-menu-right">
+<li><a href="#" data-toggle="modal" data-target="#snapshot_nodoc_20160929"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;Use in ForgeGradle</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160929-1.10.2/mcp_snapshot_nodoc-20160929-1.10.2.zip"><span class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;Download Zip</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160929-1.10.2/mcp_snapshot_nodoc-20160929-1.10.2.zip.md5"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;MD5 File Hash</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160929-1.10.2/mcp_snapshot_nodoc-20160929-1.10.2.zip.sha1"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;SHA-1 File Hash</a></li>
+</ul>
+</div>
+</td>
+<td class="date">2016-09-29 03:00:01 EDT</td>
+<div class="modal fade" id="snapshot_20160929" tabindex="-1" role="dialog" aria-labelledby="snapshot_20160929Label" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<h4 class="modal-title" id="snapshot_20160929Label">Use this mapping set in ForgeGradle</h4>
+</div>
+<div class="modal-body">
+<p>Add or edit this info in your build.gradle file:</p>
+<code>minecraft {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;mappings = 'snapshot_20160929'<br />
+}</code>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="snapshot_nodoc_20160929" tabindex="-1" role="dialog" aria-labelledby="snapshot_nodoc_20160929Label" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<h4 class="modal-title" id="snapshot_nodoc_20160929Label">Use this mapping set in ForgeGradle</h4>
+</div>
+<div class="modal-body">
+<p>Add or edit this info in your build.gradle file:</p>
+<code>minecraft {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;mappings = 'snapshot_nodoc_20160929'<br />
+}</code>
+</div>
+</div>
+</div>
+</div>
+</tr>
+<tr>
+<td class="name">mcp_snapshot-20160928-1.10.2.zip</td>
+<td class="version">1.10.2</td>
+<td class="dl">
+<div class="btn-group">
+<a href="#" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+snapshot_20160928&nbsp;&nbsp;(327.6 KB)&nbsp;&nbsp;
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu dropdown-menu-right">
+<li><a href="#" data-toggle="modal" data-target="#snapshot_20160928"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;Use in ForgeGradle</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160928-1.10.2/mcp_snapshot-20160928-1.10.2.zip"><span class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;Download Zip</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160928-1.10.2/mcp_snapshot-20160928-1.10.2.zip.md5"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;MD5 File Hash</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160928-1.10.2/mcp_snapshot-20160928-1.10.2.zip.sha1"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;SHA-1 File Hash</a></li>
+</ul>
+</div>
+<div class="btn-group">
+<a href="#" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+snapshot_nodoc_20160928&nbsp;&nbsp;(217.7 KB)&nbsp;&nbsp;
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu dropdown-menu-right">
+<li><a href="#" data-toggle="modal" data-target="#snapshot_nodoc_20160928"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;Use in ForgeGradle</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160928-1.10.2/mcp_snapshot_nodoc-20160928-1.10.2.zip"><span class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;Download Zip</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160928-1.10.2/mcp_snapshot_nodoc-20160928-1.10.2.zip.md5"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;MD5 File Hash</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160928-1.10.2/mcp_snapshot_nodoc-20160928-1.10.2.zip.sha1"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;SHA-1 File Hash</a></li>
+</ul>
+</div>
+</td>
+<td class="date">2016-09-28 03:00:01 EDT</td>
+<div class="modal fade" id="snapshot_20160928" tabindex="-1" role="dialog" aria-labelledby="snapshot_20160928Label" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<h4 class="modal-title" id="snapshot_20160928Label">Use this mapping set in ForgeGradle</h4>
+</div>
+<div class="modal-body">
+<p>Add or edit this info in your build.gradle file:</p>
+<code>minecraft {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;mappings = 'snapshot_20160928'<br />
+}</code>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="snapshot_nodoc_20160928" tabindex="-1" role="dialog" aria-labelledby="snapshot_nodoc_20160928Label" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<h4 class="modal-title" id="snapshot_nodoc_20160928Label">Use this mapping set in ForgeGradle</h4>
+</div>
+<div class="modal-body">
+<p>Add or edit this info in your build.gradle file:</p>
+<code>minecraft {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;mappings = 'snapshot_nodoc_20160928'<br />
+}</code>
+</div>
+</div>
+</div>
+</div>
+</tr>
+<tr>
+<td class="name">mcp_snapshot-20160927-1.10.2.zip</td>
+<td class="version">1.10.2</td>
+<td class="dl">
+<div class="btn-group">
+<a href="#" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+snapshot_20160927&nbsp;&nbsp;(327.6 KB)&nbsp;&nbsp;
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu dropdown-menu-right">
+<li><a href="#" data-toggle="modal" data-target="#snapshot_20160927"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;Use in ForgeGradle</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160927-1.10.2/mcp_snapshot-20160927-1.10.2.zip"><span class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;Download Zip</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160927-1.10.2/mcp_snapshot-20160927-1.10.2.zip.md5"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;MD5 File Hash</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160927-1.10.2/mcp_snapshot-20160927-1.10.2.zip.sha1"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;SHA-1 File Hash</a></li>
+</ul>
+</div>
+<div class="btn-group">
+<a href="#" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+snapshot_nodoc_20160927&nbsp;&nbsp;(217.7 KB)&nbsp;&nbsp;
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu dropdown-menu-right">
+<li><a href="#" data-toggle="modal" data-target="#snapshot_nodoc_20160927"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;Use in ForgeGradle</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160927-1.10.2/mcp_snapshot_nodoc-20160927-1.10.2.zip"><span class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;Download Zip</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160927-1.10.2/mcp_snapshot_nodoc-20160927-1.10.2.zip.md5"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;MD5 File Hash</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160927-1.10.2/mcp_snapshot_nodoc-20160927-1.10.2.zip.sha1"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;SHA-1 File Hash</a></li>
+</ul>
+</div>
+</td>
+<td class="date">2016-09-27 03:00:01 EDT</td>
+<div class="modal fade" id="snapshot_20160927" tabindex="-1" role="dialog" aria-labelledby="snapshot_20160927Label" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<h4 class="modal-title" id="snapshot_20160927Label">Use this mapping set in ForgeGradle</h4>
+</div>
+<div class="modal-body">
+<p>Add or edit this info in your build.gradle file:</p>
+<code>minecraft {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;mappings = 'snapshot_20160927'<br />
+}</code>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="snapshot_nodoc_20160927" tabindex="-1" role="dialog" aria-labelledby="snapshot_nodoc_20160927Label" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<h4 class="modal-title" id="snapshot_nodoc_20160927Label">Use this mapping set in ForgeGradle</h4>
+</div>
+<div class="modal-body">
+<p>Add or edit this info in your build.gradle file:</p>
+<code>minecraft {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;mappings = 'snapshot_nodoc_20160927'<br />
+}</code>
+</div>
+</div>
+</div>
+</div>
+</tr>
+<tr>
+<td class="name">mcp_snapshot-20160926-1.10.2.zip</td>
+<td class="version">1.10.2</td>
+<td class="dl">
+<div class="btn-group">
+<a href="#" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+snapshot_20160926&nbsp;&nbsp;(327.6 KB)&nbsp;&nbsp;
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu dropdown-menu-right">
+<li><a href="#" data-toggle="modal" data-target="#snapshot_20160926"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;Use in ForgeGradle</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160926-1.10.2/mcp_snapshot-20160926-1.10.2.zip"><span class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;Download Zip</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160926-1.10.2/mcp_snapshot-20160926-1.10.2.zip.md5"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;MD5 File Hash</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160926-1.10.2/mcp_snapshot-20160926-1.10.2.zip.sha1"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;SHA-1 File Hash</a></li>
+</ul>
+</div>
+<div class="btn-group">
+<a href="#" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+snapshot_nodoc_20160926&nbsp;&nbsp;(217.7 KB)&nbsp;&nbsp;
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu dropdown-menu-right">
+<li><a href="#" data-toggle="modal" data-target="#snapshot_nodoc_20160926"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;Use in ForgeGradle</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160926-1.10.2/mcp_snapshot_nodoc-20160926-1.10.2.zip"><span class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;Download Zip</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160926-1.10.2/mcp_snapshot_nodoc-20160926-1.10.2.zip.md5"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;MD5 File Hash</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160926-1.10.2/mcp_snapshot_nodoc-20160926-1.10.2.zip.sha1"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;SHA-1 File Hash</a></li>
+</ul>
+</div>
+</td>
+<td class="date">2016-09-26 03:00:01 EDT</td>
+<div class="modal fade" id="snapshot_20160926" tabindex="-1" role="dialog" aria-labelledby="snapshot_20160926Label" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<h4 class="modal-title" id="snapshot_20160926Label">Use this mapping set in ForgeGradle</h4>
+</div>
+<div class="modal-body">
+<p>Add or edit this info in your build.gradle file:</p>
+<code>minecraft {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;mappings = 'snapshot_20160926'<br />
+}</code>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="snapshot_nodoc_20160926" tabindex="-1" role="dialog" aria-labelledby="snapshot_nodoc_20160926Label" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<h4 class="modal-title" id="snapshot_nodoc_20160926Label">Use this mapping set in ForgeGradle</h4>
+</div>
+<div class="modal-body">
+<p>Add or edit this info in your build.gradle file:</p>
+<code>minecraft {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;mappings = 'snapshot_nodoc_20160926'<br />
+}</code>
+</div>
+</div>
+</div>
+</div>
+</tr>
+<tr>
+<td class="name">mcp_snapshot-20160925-1.10.2.zip</td>
+<td class="version">1.10.2</td>
+<td class="dl">
+<div class="btn-group">
+<a href="#" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+snapshot_20160925&nbsp;&nbsp;(327.6 KB)&nbsp;&nbsp;
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu dropdown-menu-right">
+<li><a href="#" data-toggle="modal" data-target="#snapshot_20160925"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;Use in ForgeGradle</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160925-1.10.2/mcp_snapshot-20160925-1.10.2.zip"><span class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;Download Zip</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160925-1.10.2/mcp_snapshot-20160925-1.10.2.zip.md5"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;MD5 File Hash</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160925-1.10.2/mcp_snapshot-20160925-1.10.2.zip.sha1"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;SHA-1 File Hash</a></li>
+</ul>
+</div>
+ <div class="btn-group">
+<a href="#" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+snapshot_nodoc_20160925&nbsp;&nbsp;(217.7 KB)&nbsp;&nbsp;
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu dropdown-menu-right">
+<li><a href="#" data-toggle="modal" data-target="#snapshot_nodoc_20160925"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;Use in ForgeGradle</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160925-1.10.2/mcp_snapshot_nodoc-20160925-1.10.2.zip"><span class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;Download Zip</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160925-1.10.2/mcp_snapshot_nodoc-20160925-1.10.2.zip.md5"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;MD5 File Hash</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160925-1.10.2/mcp_snapshot_nodoc-20160925-1.10.2.zip.sha1"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;SHA-1 File Hash</a></li>
+</ul>
+</div>
+</td>
+<td class="date">2016-09-25 03:00:01 EDT</td>
+<div class="modal fade" id="snapshot_20160925" tabindex="-1" role="dialog" aria-labelledby="snapshot_20160925Label" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+ <div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<h4 class="modal-title" id="snapshot_20160925Label">Use this mapping set in ForgeGradle</h4>
+</div>
+<div class="modal-body">
+<p>Add or edit this info in your build.gradle file:</p>
+<code>minecraft {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;mappings = 'snapshot_20160925'<br />
+}</code>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="snapshot_nodoc_20160925" tabindex="-1" role="dialog" aria-labelledby="snapshot_nodoc_20160925Label" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<h4 class="modal-title" id="snapshot_nodoc_20160925Label">Use this mapping set in ForgeGradle</h4>
+</div>
+<div class="modal-body">
+<p>Add or edit this info in your build.gradle file:</p>
+<code>minecraft {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;mappings = 'snapshot_nodoc_20160925'<br />
+}</code>
+</div>
+</div>
+</div>
+</div>
+</tr>
+
+<tr>
+<td class="name">mcp_snapshot-20160924-1.10.2.zip</td>
+<td class="version">1.10.2</td>
+<td class="dl">
+<div class="btn-group">
+<a href="#" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+snapshot_20160924&nbsp;&nbsp;(327.6 KB)&nbsp;&nbsp;
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu dropdown-menu-right">
+<li><a href="#" data-toggle="modal" data-target="#snapshot_20160924"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;Use in ForgeGradle</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160924-1.10.2/mcp_snapshot-20160924-1.10.2.zip"><span class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;Download Zip</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160924-1.10.2/mcp_snapshot-20160924-1.10.2.zip.md5"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;MD5 File Hash</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160924-1.10.2/mcp_snapshot-20160924-1.10.2.zip.sha1"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;SHA-1 File Hash</a></li>
+</ul>
+</div>
+<div class="btn-group">
+<a href="#" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+snapshot_nodoc_20160924&nbsp;&nbsp;(217.7 KB)&nbsp;&nbsp;
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu dropdown-menu-right">
+<li><a href="#" data-toggle="modal" data-target="#snapshot_nodoc_20160924"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;Use in ForgeGradle</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160924-1.10.2/mcp_snapshot_nodoc-20160924-1.10.2.zip"><span class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;Download Zip</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160924-1.10.2/mcp_snapshot_nodoc-20160924-1.10.2.zip.md5"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;MD5 File Hash</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160924-1.10.2/mcp_snapshot_nodoc-20160924-1.10.2.zip.sha1"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;SHA-1 File Hash</a></li>
+</ul>
+</div>
+</td>
+<td class="date">2016-09-24 03:00:01 EDT</td>
+<div class="modal fade" id="snapshot_20160924" tabindex="-1" role="dialog" aria-labelledby="snapshot_20160924Label" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<h4 class="modal-title" id="snapshot_20160924Label">Use this mapping set in ForgeGradle</h4>
+</div>
+<div class="modal-body">
+<p>Add or edit this info in your build.gradle file:</p>
+<code>minecraft {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;mappings = 'snapshot_20160924'<br />
+}</code>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="snapshot_nodoc_20160924" tabindex="-1" role="dialog" aria-labelledby="snapshot_nodoc_20160924Label" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<h4 class="modal-title" id="snapshot_nodoc_20160924Label">Use this mapping set in ForgeGradle</h4>
+</div>
+<div class="modal-body">
+<p>Add or edit this info in your build.gradle file:</p>
+<code>minecraft {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;mappings = 'snapshot_nodoc_20160924'<br />
+}</code>
+</div>
+</div>
+</div>
+</div>
+</tr>
+<tr>
+<td class="name">mcp_snapshot-20160923-1.10.2.zip</td>
+<td class="version">1.10.2</td>
+<td class="dl">
+<div class="btn-group">
+<a href="#" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+snapshot_20160923&nbsp;&nbsp;(327.6 KB)&nbsp;&nbsp;
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu dropdown-menu-right">
+<li><a href="#" data-toggle="modal" data-target="#snapshot_20160923"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;Use in ForgeGradle</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160923-1.10.2/mcp_snapshot-20160923-1.10.2.zip"><span class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;Download Zip</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160923-1.10.2/mcp_snapshot-20160923-1.10.2.zip.md5"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;MD5 File Hash</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160923-1.10.2/mcp_snapshot-20160923-1.10.2.zip.sha1"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;SHA-1 File Hash</a></li>
+</ul>
+</div>
+<div class="btn-group">
+<a href="#" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+snapshot_nodoc_20160923&nbsp;&nbsp;(217.7 KB)&nbsp;&nbsp;
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu dropdown-menu-right">
+<li><a href="#" data-toggle="modal" data-target="#snapshot_nodoc_20160923"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;Use in ForgeGradle</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160923-1.10.2/mcp_snapshot_nodoc-20160923-1.10.2.zip"><span class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;Download Zip</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160923-1.10.2/mcp_snapshot_nodoc-20160923-1.10.2.zip.md5"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;MD5 File Hash</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160923-1.10.2/mcp_snapshot_nodoc-20160923-1.10.2.zip.sha1"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;SHA-1 File Hash</a></li>
+</ul>
+</div>
+</td>
+<td class="date">2016-09-23 03:00:01 EDT</td>
+<div class="modal fade" id="snapshot_20160923" tabindex="-1" role="dialog" aria-labelledby="snapshot_20160923Label" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<h4 class="modal-title" id="snapshot_20160923Label">Use this mapping set in ForgeGradle</h4>
+</div>
+<div class="modal-body">
+ <p>Add or edit this info in your build.gradle file:</p>
+<code>minecraft {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;mappings = 'snapshot_20160923'<br />
+}</code>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="snapshot_nodoc_20160923" tabindex="-1" role="dialog" aria-labelledby="snapshot_nodoc_20160923Label" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<h4 class="modal-title" id="snapshot_nodoc_20160923Label">Use this mapping set in ForgeGradle</h4>
+</div>
+<div class="modal-body">
+<p>Add or edit this info in your build.gradle file:</p>
+<code>minecraft {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;mappings = 'snapshot_nodoc_20160923'<br />
+}</code>
+</div>
+</div>
+</div>
+</div>
+</tr>
+<tr>
+<td class="name">mcp_snapshot-20160922-1.10.2.zip</td>
+<td class="version">1.10.2</td>
+<td class="dl">
+<div class="btn-group">
+<a href="#" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+snapshot_20160922&nbsp;&nbsp;(327.6 KB)&nbsp;&nbsp;
+ <span class="caret"></span>
+</a>
+<ul class="dropdown-menu dropdown-menu-right">
+<li><a href="#" data-toggle="modal" data-target="#snapshot_20160922"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;Use in ForgeGradle</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160922-1.10.2/mcp_snapshot-20160922-1.10.2.zip"><span class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;Download Zip</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160922-1.10.2/mcp_snapshot-20160922-1.10.2.zip.md5"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;MD5 File Hash</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160922-1.10.2/mcp_snapshot-20160922-1.10.2.zip.sha1"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;SHA-1 File Hash</a></li>
+</ul>
+</div>
+<div class="btn-group">
+<a href="#" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+snapshot_nodoc_20160922&nbsp;&nbsp;(217.7 KB)&nbsp;&nbsp;
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu dropdown-menu-right">
+<li><a href="#" data-toggle="modal" data-target="#snapshot_nodoc_20160922"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;Use in ForgeGradle</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160922-1.10.2/mcp_snapshot_nodoc-20160922-1.10.2.zip"><span class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;Download Zip</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160922-1.10.2/mcp_snapshot_nodoc-20160922-1.10.2.zip.md5"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;MD5 File Hash</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160922-1.10.2/mcp_snapshot_nodoc-20160922-1.10.2.zip.sha1"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;SHA-1 File Hash</a></li>
+</ul>
+</div>
+</td>
+<td class="date">2016-09-22 03:00:01 EDT</td>
+<div class="modal fade" id="snapshot_20160922" tabindex="-1" role="dialog" aria-labelledby="snapshot_20160922Label" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<h4 class="modal-title" id="snapshot_20160922Label">Use this mapping set in ForgeGradle</h4>
+</div>
+<div class="modal-body">
+<p>Add or edit this info in your build.gradle file:</p>
+<code>minecraft {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;mappings = 'snapshot_20160922'<br />
+}</code>
+</div>
+ </div>
+</div>
+</div>
+<div class="modal fade" id="snapshot_nodoc_20160922" tabindex="-1" role="dialog" aria-labelledby="snapshot_nodoc_20160922Label" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<h4 class="modal-title" id="snapshot_nodoc_20160922Label">Use this mapping set in ForgeGradle</h4>
+</div>
+<div class="modal-body">
+<p>Add or edit this info in your build.gradle file:</p>
+<code>minecraft {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;mappings = 'snapshot_nodoc_20160922'<br />
+}</code>
+</div>
+</div>
+</div>
+</div>
+</tr>
+<tr>
+<td class="name">mcp_snapshot-20160921-1.10.2.zip</td>
+<td class="version">1.10.2</td>
+<td class="dl">
+<div class="btn-group">
+<a href="#" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+snapshot_20160921&nbsp;&nbsp;(327.6 KB)&nbsp;&nbsp;
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu dropdown-menu-right">
+<li><a href="#" data-toggle="modal" data-target="#snapshot_20160921"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;Use in ForgeGradle</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160921-1.10.2/mcp_snapshot-20160921-1.10.2.zip"><span class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;Download Zip</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160921-1.10.2/mcp_snapshot-20160921-1.10.2.zip.md5"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;MD5 File Hash</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160921-1.10.2/mcp_snapshot-20160921-1.10.2.zip.sha1"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;SHA-1 File Hash</a></li>
+</ul>
+</div>
+<div class="btn-group">
+<a href="#" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+snapshot_nodoc_20160921&nbsp;&nbsp;(217.7 KB)&nbsp;&nbsp;
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu dropdown-menu-right">
+<li><a href="#" data-toggle="modal" data-target="#snapshot_nodoc_20160921"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;Use in ForgeGradle</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160921-1.10.2/mcp_snapshot_nodoc-20160921-1.10.2.zip"><span class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;Download Zip</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160921-1.10.2/mcp_snapshot_nodoc-20160921-1.10.2.zip.md5"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;MD5 File Hash</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160921-1.10.2/mcp_snapshot_nodoc-20160921-1.10.2.zip.sha1"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;SHA-1 File Hash</a></li>
+</ul>
+</div>
+</td>
+<td class="date">2016-09-21 03:00:01 EDT</td>
+<div class="modal fade" id="snapshot_20160921" tabindex="-1" role="dialog" aria-labelledby="snapshot_20160921Label" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<h4 class="modal-title" id="snapshot_20160921Label">Use this mapping set in ForgeGradle</h4>
+</div>
+<div class="modal-body">
+<p>Add or edit this info in your build.gradle file:</p>
+<code>minecraft {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;mappings = 'snapshot_20160921'<br />
+}</code>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="snapshot_nodoc_20160921" tabindex="-1" role="dialog" aria-labelledby="snapshot_nodoc_20160921Label" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<h4 class="modal-title" id="snapshot_nodoc_20160921Label">Use this mapping set in ForgeGradle</h4>
+</div>
+<div class="modal-body">
+<p>Add or edit this info in your build.gradle file:</p>
+<code>minecraft {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;mappings = 'snapshot_nodoc_20160921'<br />
+}</code>
+</div>
+</div>
+</div>
+</div>
+</tr>
+<tr>
+<td class="name">mcp_snapshot-20160920-1.10.2.zip</td>
+<td class="version">1.10.2</td>
+<td class="dl">
+<div class="btn-group">
+<a href="#" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+snapshot_20160920&nbsp;&nbsp;(327.6 KB)&nbsp;&nbsp;
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu dropdown-menu-right">
+<li><a href="#" data-toggle="modal" data-target="#snapshot_20160920"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;Use in ForgeGradle</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160920-1.10.2/mcp_snapshot-20160920-1.10.2.zip"><span class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;Download Zip</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160920-1.10.2/mcp_snapshot-20160920-1.10.2.zip.md5"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;MD5 File Hash</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160920-1.10.2/mcp_snapshot-20160920-1.10.2.zip.sha1"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;SHA-1 File Hash</a></li>
+</ul>
+</div>
+<div class="btn-group">
+<a href="#" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+snapshot_nodoc_20160920&nbsp;&nbsp;(217.7 KB)&nbsp;&nbsp;
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu dropdown-menu-right">
+<li><a href="#" data-toggle="modal" data-target="#snapshot_nodoc_20160920"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;Use in ForgeGradle</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160920-1.10.2/mcp_snapshot_nodoc-20160920-1.10.2.zip"><span class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;Download Zip</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160920-1.10.2/mcp_snapshot_nodoc-20160920-1.10.2.zip.md5"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;MD5 File Hash</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160920-1.10.2/mcp_snapshot_nodoc-20160920-1.10.2.zip.sha1"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;SHA-1 File Hash</a></li>
+</ul>
+</div>
+</td>
+<td class="date">2016-09-20 03:00:01 EDT</td>
+<div class="modal fade" id="snapshot_20160920" tabindex="-1" role="dialog" aria-labelledby="snapshot_20160920Label" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<h4 class="modal-title" id="snapshot_20160920Label">Use this mapping set in ForgeGradle</h4>
+</div>
+<div class="modal-body">
+<p>Add or edit this info in your build.gradle file:</p>
+<code>minecraft {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;mappings = 'snapshot_20160920'<br />
+}</code>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="snapshot_nodoc_20160920" tabindex="-1" role="dialog" aria-labelledby="snapshot_nodoc_20160920Label" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<h4 class="modal-title" id="snapshot_nodoc_20160920Label">Use this mapping set in ForgeGradle</h4>
+</div>
+<div class="modal-body">
+<p>Add or edit this info in your build.gradle file:</p>
+<code>minecraft {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;mappings = 'snapshot_nodoc_20160920'<br />
+}</code>
+</div>
+</div>
+</div>
+</div>
+</tr>
+<tr>
+<td class="name">mcp_snapshot-20160919-1.10.2.zip</td>
+<td class="version">1.10.2</td>
+<td class="dl">
+<div class="btn-group">
+<a href="#" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+snapshot_20160919&nbsp;&nbsp;(327.5 KB)&nbsp;&nbsp;
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu dropdown-menu-right">
+<li><a href="#" data-toggle="modal" data-target="#snapshot_20160919"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;Use in ForgeGradle</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160919-1.10.2/mcp_snapshot-20160919-1.10.2.zip"><span class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;Download Zip</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160919-1.10.2/mcp_snapshot-20160919-1.10.2.zip.md5"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;MD5 File Hash</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot/20160919-1.10.2/mcp_snapshot-20160919-1.10.2.zip.sha1"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;SHA-1 File Hash</a></li>
+</ul>
+</div>
+<div class="btn-group">
+<a href="#" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+snapshot_nodoc_20160919&nbsp;&nbsp;(217.6 KB)&nbsp;&nbsp;
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu dropdown-menu-right">
+<li><a href="#" data-toggle="modal" data-target="#snapshot_nodoc_20160919"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;Use in ForgeGradle</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160919-1.10.2/mcp_snapshot_nodoc-20160919-1.10.2.zip"><span class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;Download Zip</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160919-1.10.2/mcp_snapshot_nodoc-20160919-1.10.2.zip.md5"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;MD5 File Hash</a></li>
+<li><a href="http://export.mcpbot.bspk.rs/mcp_snapshot_nodoc/20160919-1.10.2/mcp_snapshot_nodoc-20160919-1.10.2.zip.sha1"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;SHA-1 File Hash</a></li>
+</ul>
+</div>
+</td>
+<td class="date">2016-09-19 03:00:01 EDT</td>
+<div class="modal fade" id="snapshot_20160919" tabindex="-1" role="dialog" aria-labelledby="snapshot_20160919Label" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<h4 class="modal-title" id="snapshot_20160919Label">Use this mapping set in ForgeGradle</h4>
+</div>
+<div class="modal-body">
+<p>Add or edit this info in your build.gradle file:</p>
+<code>minecraft {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;mappings = 'snapshot_20160919'<br />
+}</code>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="snapshot_nodoc_20160919" tabindex="-1" role="dialog" aria-labelledby="snapshot_nodoc_20160919Label" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<h4 class="modal-title" id="snapshot_nodoc_20160919Label">Use this mapping set in ForgeGradle</h4>
+</div>
+<div class="modal-body">
+<p>Add or edit this info in your build.gradle file:</p>
+<code>minecraft {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;mappings = 'snapshot_nodoc_20160919'<br />
+}</code>
+</div>
+</div>
+</div>
+</div>
+</tr>
+</tbody>
+</table>
+<ul class="pagination">
+<li><a href="?page=1"><i class="fa fa-angle-double-left"></i></a></li>
+<li><a href="?page=4"><i class="fa fa-angle-left"></i></a></li>
+<li><a href="?page=3">3</a></li>
+<li><a href="?page=4">4</a></li>
+<li class="active"><a href="?page=5">5</a></li>
+<li><a href="?page=6">6</a></li>
+<li><a href="?page=7">7</a></li>
+<li><a href="?page=6"><i class="fa fa-angle-right"></i></a></li>
+<li><a href="?page=12"><i class="fa fa-angle-double-right"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="row">
+<hr />
+<div class="col-sm-12">
+<p align="center"><small>&copy; 2020 MCP Team</small></p>
+<p align="center"><small>Designed using <a href="https://bootswatch.com/" target="blank">Bootswatch</a> via <a href="https://www.bootstrapcdn.com/" target="blank">BootstrapCDN</a>. MCP logo by <a href="http://arisux.com/" target="blank">Dustin Christensen</a></small></p>
+<p align="center"><small>Page accessed 2020-01-16 09:52:20 EST</small></p>
+</div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="http://mcpbot.bspk.rs/static/js/bootswatch.js"></script>
+</body>
+</html>
